@@ -1,3 +1,15 @@
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.wrapper { 
+    width: 98%;
+    margin: 0 auto;
+}
+
+li { list-style-type: none; }
+
 .caps-first,label { @include textTransform($transform:capitalize); }
 .caps { @include textTransform($transform:uppercase); }
 .font-color-black { color: map-get($map: $colors, $key: blackColor); }
