@@ -297,13 +297,17 @@ li {
   font-size: 0; }
 
 .header-section {
+  width: 100%;
   padding: 8px 0;
-  background-color: #F1F1F1; }
+  background-color: #F1F1F1;
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .header-section .wrapper {
+    width: 81%; }
   .header-section__list {
-    display: flex; }
-    .header-section__list li {
-      margin-left: 9%;
-      flex-basis: 16%; }
+    display: flex;
+    justify-content: space-between; }
     .header-section__list a {
       padding: 10px;
       transition: .3s;

@@ -1,15 +1,14 @@
 .header-section {
-
+    width: 100%;
     padding: 8px 0;
     background-color: map-get($map: $colors, $key: lightGreyy);
+    @include position($position:fixed, $top:0, $left:0);
+    
+    .wrapper { width: 81% }
 
     &__list {
         @include flex();
-
-        li { 
-            margin-left: 9%;
-            @include basis($flexBasis:16%) 
-        }
+        @include justify($justify:space-between);
 
         a {  
             padding: 10px;
