@@ -4,43 +4,256 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Client</title>
+  <title>Marketing</title>
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Place favicon.ico in the root directory: mathiasbynens.be/notes/touch-icons -->
-  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="favicon.ico" >
   <!--font-awesome link for icons-->
   <link rel="stylesheet" media="screen" href="assets/vendor/font-awesome/css/all.min.css" >
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="./assets/css/style.css" >
 </head>
 
 <body>
-  <!--container start-->
+  <!--container starts here-->
   <div class="container">
-    <!--header section start-->
-    <header>
-      
+    <!--header starts here-->
+    <header class="header-section">
+      <div class="wrapper">
+        <nav class="header-section__nav">
+          <ul class="header-section__list">
+            <li><a href="#fixme" title="Home" class="caps-first font-color-black">home</a></li>
+            <li><a href="#fixme" title="Plans" class="caps-first font-color-black">plans</a></li>
+            <li><a href="#fixme" title="About" class="caps-first font-color-black">about</a></li>
+            <li><a href="#fixme" title="Contact" class="caps-first font-color-black">contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <!--header section start-->
-    <!--main section start-->
+    <!--header ends here-->
+    <!--main starts here-->
     <main>
-
+    <!-- marketing section starts -->
+      <section class="marketing-section">
+        <div class="wrapper">
+          <h1><a href="Fixme" title="Marketing" class="caps font-color-black">marketing</a></h1>
+          <span class="caps-first">template by w3.css</span>
+          <ul class="marketing-section__slider">
+            <li><img src="https://placehold.co/992x503" alt="slider-image"></li>
+            <li><img src="https://placehold.co/992x503" alt="slider-image"></li>
+            <li><img src="https://placehold.co/992x503" alt="slider-image"></li>
+          </ul>
+          <div class="pagging color-darkgrey">
+            <ul>
+              <li><a href="#fixme" title="1">1</a></li>
+              <li><a href="#fixme" title="2">2</a></li>
+              <li><a href="#fixme" title="3">3</a></li>
+            </ul>
+            <div class="button-container">
+              <div class="left-arrow"><a href="#fixme" title="Previous" class="font-color-white ">left</a></div>
+              <div class="right-arrow"><a href="#fixme" title="Next" class="font-color-white">right</a></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- marketing section ends -->
+      <!-- offer section starts -->
+      <section class="offer-section">
+        <div class="wrapper">
+          <h2 class="caps-first header-size border-bottom">what We Offer</h2>
+          <ul class="offer-section__list">
+            <li class="color-grey">
+              <h3 class="caps-first">design</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, perspiciatis fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aliquid porro!</p>
+            </li>
+            <li class="color-medium-grey">
+              <h3 class="caps-first">branding</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, perspiciatis fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aliquid porro!</p>
+            </li>
+            <li class="color-darkgrey">
+              <h3 class="caps-first font-color-white">consultation</h3>
+              <p class="font-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, perspiciatis
+                fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aliquid porro!</p>
+            </li>
+            <li class="color-black">
+              <h3 class="caps-first font-color-white">promises</h3>
+              <p class="font-color-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, perspiciatis
+                fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aliquid porro!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- offer section starts -->
+      <!-- pricing section starts -->
+      <section class="pricing-plans-section">
+        <div class="wrapper">
+          <h2 class="heading heading--pricing-plans">pricing Plans</h2>
+          <span>choose a pricing plan that fits your needs</span>
+          <div class="pricing-plans-section__structure">
+            <ul class="pricing-plans-section__list">
+              <li>
+                <h4 class="heading heading--basic">basic</h4>
+              </li>
+              <li>
+                <p><span class="font-bold">10GB</span> Storage</p>
+              </li>
+              <li>
+                <p><span class="font-bold">10</span> Emails</p>
+              </li>
+              <li>
+                <p><span class="font-bold">10</span> Domains</p>
+              </li>
+              <li>
+                <p><span class="font-bold caps-first">endless</span> Support</p>
+              </li>
+              <li>
+                <p class="padding"><span class="font-bold">$ 10</span></p>
+                <p class="font-color-grey">per month</p>
+              </li>
+              <li><a href="#fixme" title="Sign Up" class="button button--sign-up">sign up</a></li>
+            </ul>
+            <ul>
+              <li>
+                <h4 class="heading heading--pro">pro</h4>
+              </li>
+              <li>
+                <p><span class="font-bold">25GB</span> Storage</p>
+              </li>
+              <li>
+                <p><span class="font-bold">25</span> Emails</p>
+              </li>
+              <li>
+                <p><span class="font-bold">25</span> Domains</p>
+              </li>
+              <li>
+                <p><span class="font-bold caps-first">endless</span> Support</p>
+              </li>
+              <li>
+                <p class="padding"><span class="font-bold">$ 25</span></p>
+                <p class="font-color-grey">per month</p>
+              </li>
+              <li><a href="#fixme" title="Sign Up" class="button button--sign-up">sign up</a></li>
+            </ul>
+            <ul>
+              <li>
+                <h4 class="heading heading--premium">premium</h4>
+              </li>
+              <li>
+                <p><span class="font-bold">50GB</span> Storage</p>
+              </li>
+              <li>
+                <p><span class="font-bold">50</span> Emails</p>
+              </li>
+              <li>
+                <p><span class="font-bold">50</span> Domains</p>
+              </li>
+              <li>
+                <p><span class="font-bold caps-first">endless</span> Support</p>
+              </li>
+              <li>
+                <p class="padding"><span class="font-bold">$ 50</span></p>
+                <p class="font-color-grey">per month</p>
+              </li>
+              <li><a href="#fixme" title="Sign Up" class="button button--sign-up">sign up</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- pricing section ends -->
+      <!-- about section starts -->
+      <section class="about-us-section">
+        <div class="wrapper">
+          <h5 class="heading heading--about-us">who are we</h5>
+          <ul>
+            <li>
+              <figure><img src="https://placehold.co/321x213" alt="Image"></figure>
+              <div>
+                <h6 class="heading">jane doe</h6>
+                <span class="font-color-grey caps-first"><span class="caps font-color-grey">ceo</span> & founder</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, a aperiam.</p>
+                <a href="#fixme" title="Contact" class="button button--contact">contact</a>
+              </div>
+            </li>
+            <li>
+              <figure><img src="https://placehold.co/321x213" alt="Image"></figure>
+              <div>
+                <h6 class="heading">mike ross</h6>
+                <span class="font-color-grey caps-first">art director</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, a aperiam.</p>
+                <a href="#fixme" title="Contact" class="button button--contact">contact</a>
+              </div>
+            </li>
+            <li>
+              <figure><img src="https://placehold.co/321x213" alt="Image"></figure>
+              <div>
+                <h6 class="heading">jane doe</h6>
+                <span class="font-color-grey caps-first">designer</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, a aperiam.</p>
+                <a href="#fixme" title="Contact" class="button button--contact">contact</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- about section ends -->
+      <!-- contact section starts -->
+      <section class="contact-us-section">
+        <div class="wrapper">
+          <h2 class="heading heading--contact">contact us</h2>
+          <form action="#fixme">
+            <div>
+              <label for="Name">Name</label>
+              <input type="text" id="Name">
+            </div>
+            <div>
+              <label for="Email">Email</label>
+              <input type="email" id="Email">
+            </div>
+            <div>
+              <label for="Subject">Subject</label>
+              <input type="text" id="Subject">
+            </div>
+            <div>
+              <label for="Message">Message</label>
+              <input type="text" id="Message">
+            </div>
+            <div><a href="#fixme" title="Send" class="button button--send">send</a></div>
+          </form>
+        </div>
+      </section>
+<!-- contact section ends -->
     </main>
-    <!--main section end-->
+    <!--main ends here-->
 
-    <!--footer section start-->
-    <footer>      
-
+    <!--footer starts here-->
+    <footer class="footer-section">
+      <div class="wrapper">
+        <h4 class="heading heading--footer">footer</h4>
+        <div><a href="#fixme" title="To the top" class="button button--top"><span
+              class="caps-first">to</span>
+            the top</a>
+        </div>
+        <ul>
+          <li class="button-padding"><a href="#fixme" title="Facebook" class="icon facebook">facebook</a>
+          </li>
+          <li><a href="#fixme" title="Instagram" class="icon instagram">instagram</a></li>
+          <li><a href="#fixme" title="Snapchat" class="icon snapchat">snapchat</a></li>
+          <li><a href="#fixme" title="Pininterest" class="icon pininterest">pininterest</a></li>
+          <li><a href="#fixme" title="Instagram" class="icon instagram">instagram</a></li>
+          <li><a href="#fixme" title="Linkedin" class="icon linkedin">linkedin</a></li>
+        </ul>
+        <p class="space">powered by <a href="#fixme" title="w3.css" class="font-color-black">w3.css</a></p>
+      </div>
     </footer>
-    <!--footer section end-->
+    <!--footer ends here-->
 
   </div>
-  <!--container end-->
-  <script src="assets/js/script.js"></script>
+  <!--container ends here-->
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
