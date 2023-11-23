@@ -1,0 +1,31 @@
+.caps-first,label { @include textTransform($transform:capitalize); }
+.caps { @include textTransform($transform:uppercase); }
+.font-color-black { color: map-get($map: $colors, $key: blackColor); }
+.font-color-white { color: map-get($map: $colors, $key: whiteColor); }
+.font-color-grey { color: map-get($map: $colors, $key: medGrey); }
+.color-grey { color: map-get($map: $colors, $key: lightGreyy); }
+.color-medium-grey { color: map-get($map: $colors, $key: medGrey); }
+.color-darkgrey { color: map-get($map: $colors, $key: medDarkGrey); }
+.color-black { color: map-get($map: $colors, $key: blackColor); }
+.font-bold { @include fontSize($weight: 600); }
+
+.heading-marketing { 
+    @include fontSize($size: 27px, $weight: 600, $family: null);
+    @include textTransform($transform:uppercase); 
+}
+
+.heading { 
+    @include fontSize($size: 22px, $weight: 600, $family: null);
+    @include textTransform($transform:uppercase); 
+}
+
+.button { 
+    @include fontSize($weight: 600);
+    @include textTransform($transform:capitalize);
+ }
+
+ .icon {
+    font-family: "fontAwesome";
+    transition: .3s;
+    @include fontSize($size: 0);
+ }
