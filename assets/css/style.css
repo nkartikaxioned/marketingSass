@@ -411,4 +411,61 @@ li {
       font-size: 18px;
       line-height: 1.5; }
 
+.pricing-plans-section {
+  padding-top: 100px; }
+  .pricing-plans-section .wrapper {
+    width: 97%; }
+  .pricing-plans-section .description {
+    margin: 20px 0 80px;
+    font-size: 22px; }
+    .pricing-plans-section .description::first-letter {
+      text-transform: capitalize; }
+  .pricing-plans-section h4 {
+    padding: 40px 0;
+    color: #fff; }
+  .pricing-plans-section__structure {
+    display: flex; }
+    .pricing-plans-section__structure ul {
+      flex-basis: 32%; }
+      .pricing-plans-section__structure ul span {
+        margin: 0; }
+  .pricing-plans-section__list, .pricing-plans-section span, .pricing-plans-section p, .pricing-plans-section li, .pricing-plans-section .button--sign-up {
+    text-align: center; }
+  .pricing-plans-section__list-pro li:first-child {
+    background-color: #616161; }
+  .pricing-plans-section__list li:first-child, .pricing-plans-section__list--premium li:first-child {
+    background-color: #000; }
+  .pricing-plans-section__list li:not(:first-child), .pricing-plans-section__list--premium li:not(:first-child), .pricing-plans-section__list-pro li:not(:first-child) {
+    padding: 20px 0;
+    border: 1px solid #BBBBBB;
+    border-top: 0; }
+  .pricing-plans-section__list li:last-child, .pricing-plans-section__list--premium li:last-child, .pricing-plans-section__list-pro li:last-child {
+    background-color: #F1F1F1; }
+  .pricing-plans-section__list p, .pricing-plans-section__list--premium p, .pricing-plans-section__list-pro p {
+    font-size: 22px; }
+  .pricing-plans-section__list--premium, .pricing-plans-section__list-pro {
+    margin-left: 2%; }
+  .pricing-plans-section .common span {
+    display: block; }
+    .pricing-plans-section .common span:first-child {
+      margin-top: 5px;
+      margin-bottom: 15px;
+      letter-spacing: 5px;
+      font-size: 42px; }
+  .pricing-plans-section .month {
+    font-size: 22px; }
+  .pricing-plans-section .button--sign-up {
+    padding: 18px 7%;
+    border: 1px solid #4CAF50;
+    margin: 10px 0;
+    background-color: #4CAF50;
+    color: #fff;
+    transition: .3s;
+    font-size: 22px;
+    font-weight: 300; }
+    @media only screen and (min-width: 995px) {
+      .pricing-plans-section .button--sign-up:hover {
+        background-color: transparent;
+        color: #4CAF50; } }
+
 /*# sourceMappingURL=style.css.map */
