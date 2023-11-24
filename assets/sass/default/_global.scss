@@ -15,10 +15,10 @@ li { list-style-type: none; }
 .font-color-black { color: map-get($map: $colors, $key: blackColor); }
 .font-color-white { color: map-get($map: $colors, $key: whiteColor); }
 .font-color-grey { color: map-get($map: $colors, $key: medGrey); }
-.color-grey { color: map-get($map: $colors, $key: lightGreyy); }
-.color-medium-grey { color: map-get($map: $colors, $key: medGrey); }
-.color-darkgrey { color: map-get($map: $colors, $key: medDarkGrey); }
-.color-black { color: map-get($map: $colors, $key: blackColor); }
+.offer-section .color-grey { background-color: map-get($map: $colors, $key: lightGreyy); }
+.offer-section .color-medium-grey { background-color: map-get($map: $colors, $key: medGrey); }
+.offer-section .color-darkgrey { background-color: map-get($map: $colors, $key: medDarkGrey); }
+.offer-section .color-black { background-color: map-get($map: $colors, $key: blackColor); }
 .font-bold { @include fontSize($weight: 600); }
 
 .heading-marketing { 
@@ -27,8 +27,9 @@ li { list-style-type: none; }
 }
 
 .heading { 
-    @include fontSize($size: 22px, $weight: 600, $family: null);
-    @include textTransform($transform:uppercase); 
+    text-align: center;
+    @include fontSize($size: 32px, $weight: 300, $family: null);
+    @include textTransform($transform:capitalize); 
 }
 
 .button { 

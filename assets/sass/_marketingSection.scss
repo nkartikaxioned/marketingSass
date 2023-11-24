@@ -47,6 +47,7 @@
       padding: 8px 8px;
       border: 2px solid map-get($map: $colors, $key: whiteColor);
       transition: .3s;
+      //z-index: 1;
       @include fontSize($size: 0);
 
       @include hover-effect($value: 995px) {
@@ -59,10 +60,13 @@
 
     .button-container {
       width: 98%;
+     // z-index: -1;
       @include flex();
       @include justify($justify:space-between);
       @include position($position:absolute, $top:50%, $left:50%);
       @include transform($transform:translate(-50%,-50%));
+
+      //.left-arrow,.right-arrow { z-index: 1; }
 
       .left-arrow a,.right-arrow a { 
         transition: .3s;

@@ -263,17 +263,17 @@ li {
 .font-color-grey {
   color: #BBBBBB; }
 
-.color-grey {
-  color: #F1F1F1; }
+.offer-section .color-grey {
+  background-color: #F1F1F1; }
 
-.color-medium-grey {
-  color: #BBBBBB; }
+.offer-section .color-medium-grey {
+  background-color: #BBBBBB; }
 
-.color-darkgrey {
-  color: #616161; }
+.offer-section .color-darkgrey {
+  background-color: #616161; }
 
-.color-black {
-  color: #000; }
+.offer-section .color-black {
+  background-color: #000; }
 
 .font-bold {
   font-weight: 600; }
@@ -284,9 +284,10 @@ li {
   text-transform: uppercase; }
 
 .heading {
-  font-size: 22px;
-  font-weight: 600;
-  text-transform: uppercase; }
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: capitalize; }
 
 .button {
   font-weight: 600;
@@ -383,5 +384,31 @@ li {
         content: ""; }
       .marketing-section .pagging .button-container .right-arrow a::after {
         content: ""; }
+
+.offer-section {
+  padding-top: 80px; }
+  .offer-section h3 {
+    text-align: start; }
+  .offer-section .heading--what-we-offer::after {
+    content: "";
+    width: 0;
+    height: 8px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    background: #BBBBBB; }
+  .offer-section .heading--what-we-offer::after {
+    width: 17%;
+    margin-top: 20px; }
+  .offer-section__list {
+    padding-top: 60px;
+    display: flex; }
+    .offer-section__list li {
+      padding: 40px 20px; }
+    .offer-section__list p {
+      width: 90%;
+      padding-top: 30px;
+      font-size: 18px;
+      line-height: 1.5; }
 
 /*# sourceMappingURL=style.css.map */
