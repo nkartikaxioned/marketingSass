@@ -1,0 +1,90 @@
+//pricin section style start
+.pricing-plans-section {
+     padding-top: 100px;
+
+     .wrapper { width: 97%; }
+  
+     .description { 
+        margin: 20px 0 80px; 
+        @include fontSize($size: 22px);
+        &::first-letter { text-transform: capitalize; }
+    }
+
+    h4 { 
+        padding: 40px 0;
+        color: map-get($map: $colors, $key: whiteColor); 
+    }
+
+    &__structure {
+        @include flex();
+
+        ul { 
+            @include basis($flexBasis:32%);
+
+            span { margin: 0; }
+         }
+    }
+
+    &__list,span,p,li,.button--sign-up { text-align: center; }
+    &__list-pro { 
+        li:first-child { background-color: map-get($map: $colors, $key: medDarkGrey); }
+    }
+    &__list,&__list--premium {
+        
+        li:first-child { background-color: map-get($map: $colors, $key: blackColor); }
+    }
+
+    &__list,&__list--premium,&__list-pro {
+        
+        li:not(:first-child) { 
+            padding: 20px 0;
+            border: 1px solid map-get($map: $colors, $key: medGrey); 
+            border-top: 0;
+        }
+
+        li:last-child { 
+            background-color: map-get($map: $colors, $key: lightGreyy);
+         }
+
+        p { @include fontSize($size: 22px); }
+        
+    }
+
+    &__list--premium,&__list-pro { margin-left: 2%; }
+
+   .common {
+    span { 
+        display: block;
+
+        &:first-child { 
+            margin-top: 5px;
+            margin-bottom: 15px;
+            letter-spacing: 5px;
+            @include fontSize($size: 42px); 
+        }
+
+        
+     }
+   }
+   .month { @include fontSize($size: 22px); }
+
+   .button--sign-up {
+    padding: 18px 7%;
+    border: 1px solid map-get($map: $colors, $key: greenColor);
+    margin: 10px 0;
+    background-color: map-get($map: $colors, $key: greenColor);
+    color: map-get($map: $colors, $key: whiteColor);
+    transition: .3s;
+    @include fontSize($size: 22px,$weight: 300); 
+
+    @include hover-effect($value: 995px){
+        &:hover {
+            background-color: transparent;
+    color: map-get($map: $colors, $key: greenColor);
+    }
+    }
+
+   }
+}
+
+//pricin section style end

@@ -1,0 +1,62 @@
+/* contact section style start */
+
+.contact-us-section {
+    padding: 100px 0;
+
+    .wrapper { width: 97%; }
+
+    .heading--contact::after {
+        content: "";
+            width: 0;
+            height: 8px;
+            margin: auto;
+            display: block;
+            align-items: center;
+            background: map-get($map: $colors, $key: medGrey);
+     }
+
+     .heading--contact::after {  
+        width: 11%; 
+        // margin-top: 20px
+    }
+
+    form,div,input { 
+        width: 100%;
+    
+        form { margin-top: 80px; }
+        div:not(:first-child) { margin-top: 20px; }
+
+        label { 
+            display: block; 
+            @include fontSize($size: 20px);
+        }
+
+        input { 
+            padding: 15px; 
+            border: 1px solid map-get($map: $colors, $key: medGrey);
+            outline: 0;
+        }
+
+        .button--send {
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            border: 1px solid map-get($map: $colors, $key: blackColor);
+            background-color: map-get($map: $colors, $key: blackColor);
+            color: map-get($map: $colors, $key: whiteColor);
+            transition: .3s;
+            @include fontSize($size: 20px);
+
+            @include hover-effect($value: 995px){
+                &:hover {
+                    border-color: map-get($map: $colors, $key: blackColor);
+                    background-color: transparent;
+            color: map-get($map: $colors, $key: blackColor);
+            }
+            }
+        }
+    }
+
+}
+
+/* contact section style end*/
