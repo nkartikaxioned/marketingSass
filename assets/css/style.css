@@ -468,4 +468,59 @@ li {
         background-color: transparent;
         color: #4CAF50; } }
 
+.about-us-section {
+  padding-top: 100px; }
+  .about-us-section .wrapper {
+    width: 97%; }
+  .about-us-section h6 {
+    margin-bottom: 20px;
+    text-align: start; }
+  .about-us-section .heading--about-us::after {
+    content: "";
+    width: 0;
+    height: 8px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    background: #BBBBBB; }
+  .about-us-section .heading--about-us::after {
+    width: 13%;
+    margin-top: 20px; }
+  .about-us-section ul {
+    margin-top: 60px;
+    display: flex; }
+    .about-us-section ul li {
+      box-shadow: 1px 1px 8px 5px #BBBBBB;
+      flex-basis: 32%; }
+      .about-us-section ul li:not(:first-child) {
+        margin-left: 2%; }
+      .about-us-section ul li div {
+        padding: 20px; }
+        .about-us-section ul li div span, .about-us-section ul li div p {
+          font-size: 20px; }
+        .about-us-section ul li div p {
+          margin-top: 20px; }
+    .about-us-section ul figure {
+      width: 100%; }
+    .about-us-section ul img {
+      width: 100%;
+      height: auto;
+      object-fit: cover; }
+  .about-us-section .button--contact {
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid #F1F1F1;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #F1F1F1;
+    color: #000;
+    transition: .3s;
+    font-size: 20px;
+    font-weight: 300; }
+    @media only screen and (min-width: 995px) {
+      .about-us-section .button--contact:hover {
+        border-color: #616161;
+        background-color: transparent;
+        color: #616161; } }
+
 /*# sourceMappingURL=style.css.map */
