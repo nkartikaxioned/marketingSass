@@ -1,0 +1,62 @@
+/* footer-section style start */
+
+.footer-section {
+    padding: 60px 0 50px;
+    text-align: center;
+   background-color: map-get($map: $colors, $key: lightGreyy);
+
+   .button--top {
+    margin: 40px 0;
+    padding: 10px 15px;
+    border: 1px solid map-get($map: $colors, $key: blackColor);
+    background-color: map-get($map: $colors, $key: blackColor);
+     color:  map-get($map: $colors, $key: whiteColor);
+     transition: .3s;
+     @include fontSize($size: 18px,$weight:300 );
+
+     &:hover {
+        color: map-get($map: $colors, $key: blackColor);
+        background-color: transparent;
+}
+
+    &::before {
+        content: map-get($map: $iconContent, $key: arrowTop);
+        margin-right: 15px;
+        font-family: "fontAwesome";
+    }
+};
+
+   ul { 
+    @include flex();
+    @include justify($justify :center);
+
+    li:not(:first-child) { margin-left: 1%; }   
+ }
+
+ .icon {
+    transition: .3s;
+    &:hover { color: map-get($map: $colors, $key: whiteColor); }
+}
+
+ .icon::after {
+    font-family: "fontAwesome";
+    color: map-get($map: $colors, $key: blackColor);
+    @include fontSize($size: 30px);
+ }
+
+ .instagram::after { content: map-get($map: $iconContent, $key: instagram) };
+ .snapchat::after { content: map-get($map: $iconContent, $key: snapchat) };
+ .pininterest::after { content: map-get($map: $iconContent, $key: pinterest) };
+ .instagram::after { content: map-get($map: $iconContent, $key: instagram) };
+ .linkedin::after { content: map-get($map: $iconContent, $key: linkedin) };
+
+.space { 
+    margin-top: 40px; 
+    &::first-letter { text-transform: capitalize; }
+
+    a { border-bottom: 1px solid map-get($map: $colors, $key: blackColor); }
+}
+
+}
+
+/* footer-section style end */

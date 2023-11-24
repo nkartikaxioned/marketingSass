@@ -567,5 +567,57 @@ li {
           color: #000; } }
 
 /* contact section style end*/
+/* footer-section style start */
+.footer-section {
+  padding: 60px 0 50px;
+  text-align: center;
+  background-color: #F1F1F1; }
+  .footer-section .button--top {
+    margin: 40px 0;
+    padding: 10px 15px;
+    border: 1px solid #000;
+    background-color: #000;
+    color: #fff;
+    transition: .3s;
+    font-size: 18px;
+    font-weight: 300; }
+    .footer-section .button--top:hover {
+      color: #000;
+      background-color: transparent; }
+    .footer-section .button--top::before {
+      content: "";
+      margin-right: 15px;
+      font-family: "fontAwesome"; }
+  .footer-section ul {
+    display: flex;
+    justify-content: center; }
+    .footer-section ul li:not(:first-child) {
+      margin-left: 1%; }
+  .footer-section .icon {
+    transition: .3s; }
+    .footer-section .icon:hover {
+      color: #fff; }
+  .footer-section .icon::after {
+    font-family: "fontAwesome";
+    color: #000;
+    font-size: 30px; }
+  .footer-section .instagram::after {
+    content: ""; }
+  .footer-section .snapchat::after {
+    content: ""; }
+  .footer-section .pininterest::after {
+    content: ""; }
+  .footer-section .instagram::after {
+    content: ""; }
+  .footer-section .linkedin::after {
+    content: ""; }
+  .footer-section .space {
+    margin-top: 40px; }
+    .footer-section .space::first-letter {
+      text-transform: capitalize; }
+    .footer-section .space a {
+      border-bottom: 1px solid #000; }
+
+/* footer-section style end */
 
 /*# sourceMappingURL=style.css.map */
