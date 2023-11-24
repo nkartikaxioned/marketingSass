@@ -1,8 +1,9 @@
+//header section style start
 .header-section {
     width: 100%;
     padding: 8px 0;
     background-color: map-get($map: $colors, $key: lightGreyy);
-    @include position($position:fixed, $top:0, $left:0);
+    @include position($position:fixed,$z-index:1, $top:0, $left:0);
     
     .wrapper { width: 81% }
 
@@ -15,9 +16,14 @@
             transition: .3s;
             @include fontSize($size: 25px); 
 
-            &:hover {
-                color: map-get($map: $colors, $key: greenColor);
+            @include hover-effect($value: 995px) {
+                &:hover {
+                    color: map-get($map: $colors, $key: greenColor);
+                }
             }
+            
         }
     }
 }
+
+//header section style end

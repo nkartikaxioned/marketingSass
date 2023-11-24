@@ -22,7 +22,7 @@ li { list-style-type: none; }
 .font-bold { @include fontSize($weight: 600); }
 
 .heading-marketing { 
-    @include fontSize($size: 27px, $weight: 600, $family: null);
+    @include fontSize($size: 46px, $weight: 600, $family: null);
     @include textTransform($transform:uppercase); 
 }
 
