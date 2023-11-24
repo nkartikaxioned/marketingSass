@@ -523,4 +523,49 @@ li {
         background-color: transparent;
         color: #616161; } }
 
+/* contact section style start */
+.contact-us-section {
+  padding: 100px 0; }
+  .contact-us-section .wrapper {
+    width: 97%; }
+  .contact-us-section .heading--contact::after {
+    content: "";
+    width: 0;
+    height: 8px;
+    margin: auto;
+    display: block;
+    align-items: center;
+    background: #BBBBBB; }
+  .contact-us-section .heading--contact::after {
+    width: 11%; }
+  .contact-us-section form, .contact-us-section div, .contact-us-section input {
+    width: 100%; }
+    .contact-us-section form form, .contact-us-section div form, .contact-us-section input form {
+      margin-top: 80px; }
+    .contact-us-section form div:not(:first-child), .contact-us-section div div:not(:first-child), .contact-us-section input div:not(:first-child) {
+      margin-top: 20px; }
+    .contact-us-section form label, .contact-us-section div label, .contact-us-section input label {
+      display: block;
+      font-size: 20px; }
+    .contact-us-section form input, .contact-us-section div input, .contact-us-section input input {
+      padding: 15px;
+      border: 1px solid #BBBBBB;
+      outline: 0; }
+    .contact-us-section form .button--send, .contact-us-section div .button--send, .contact-us-section input .button--send {
+      width: 100%;
+      padding: 15px 0;
+      text-align: center;
+      border: 1px solid #000;
+      background-color: #000;
+      color: #fff;
+      transition: .3s;
+      font-size: 20px; }
+      @media only screen and (min-width: 995px) {
+        .contact-us-section form .button--send:hover, .contact-us-section div .button--send:hover, .contact-us-section input .button--send:hover {
+          border-color: #000;
+          background-color: transparent;
+          color: #000; } }
+
+/* contact section style end*/
+
 /*# sourceMappingURL=style.css.map */
